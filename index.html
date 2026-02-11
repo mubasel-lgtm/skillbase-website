@@ -898,13 +898,31 @@
     }
 
     @media (max-width: 480px) {
+      .container { padding: 0 16px; }
       .hero-title { font-size: 1.75rem; }
+      .hero-subtitle { font-size: 1rem; }
       .hero-buttons { flex-direction: column; }
       .hero-buttons .btn { width: 100%; justify-content: center; }
+      .hero .container { padding-top: 32px; padding-bottom: 32px; }
+      .hero-trust { gap: 12px; }
+      .hero-trust-item { font-size: 0.8rem; }
+      .hero-image-badge { bottom: -8px; left: -8px; padding: 12px 14px; }
+      .hero-image-badge-icon { width: 36px; height: 36px; }
       .kpi-bar .container { grid-template-columns: 1fr 1fr; }
       .kpi-item { padding: 20px 12px; }
       .kpi-number { font-size: 1.3rem; }
+      .kpi-item:not(:last-child)::after { display: none; }
+      .section-padding { padding: 48px 0; }
+      .section-title { font-size: 1.5rem; }
+      .section-subtitle { font-size: 0.95rem; margin-bottom: 32px; }
       .vorteile-grid { grid-template-columns: 1fr; }
+      .timeline { grid-template-columns: 1fr; gap: 24px; }
+      .cta-banner { padding: 48px 0; }
+      .cta-banner h2 { font-size: 1.5rem; }
+      .cta-banner p { font-size: 0.95rem; }
+      .kontakt-form { padding: 24px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
       .footer-bottom-links { flex-direction: column; gap: 8px; }
     }
   </style>
