@@ -153,25 +153,13 @@
       align-items: center;
       gap: 10px;
     }
-    .navbar-logo {
-      width: 36px;
-      height: 36px;
-      background: var(--navy);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-weight: 800;
-      font-size: 1.1rem;
+    .navbar-logo-img {
+      height: 44px;
+      width: auto;
     }
-    .navbar-name {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--navy);
-    }
-    .navbar-name span {
-      color: var(--teal);
+    .certuria-badge-img {
+      height: 80px;
+      width: auto;
     }
     .nav-links {
       display: flex;
@@ -933,8 +921,7 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <div class="navbar-logo">S</div>
-        <div class="navbar-name">Skill<span>base</span></div>
+        <img src="assets/logo.png" alt="Skillbase Bildungsinstitut" class="navbar-logo-img">
       </a>
       <div class="nav-links" id="navLinks">
         <a href="#kurse">Kurse</a>
@@ -971,18 +958,7 @@
           <a href="#kurse" class="btn btn-secondary btn-large">Kurse entdecken</a>
         </div>
         <div class="hero-trust">
-          <div class="hero-trust-item">
-            <span class="hero-trust-icon">✅</span>
-            AZAV-zertifiziert
-          </div>
-          <div class="hero-trust-item">
-            <span class="hero-trust-icon">🏅</span>
-            CERTURIA geprüft
-          </div>
-          <div class="hero-trust-item">
-            <span class="hero-trust-icon">💰</span>
-            Bildungsgutschein
-          </div>
+          <img src="assets/certuria-badge.png" alt="AZAV Certuria Zertifizierung" class="certuria-badge-img">
         </div>
       </div>
       <div class="hero-image fade-up">
@@ -1304,7 +1280,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <span class="navbar-name">Skill<span>base</span></span>
+          <img src="assets/logo.png" alt="Skillbase" style="height: 40px; margin-bottom: 12px; filter: brightness(0) invert(1);">
           <p>Ihr AZAV-zertifizierter Bildungsträger in Dortmund. Geförderte Weiterbildungen für Ihren beruflichen Erfolg.</p>
           <div class="footer-cert">
             <span class="footer-cert-badge">AZAV-zertifiziert</span>
